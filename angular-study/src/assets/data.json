@@ -1,0 +1,21 @@
+{
+  "status": 200,
+  "data": [
+    {
+      "message": "하이",
+      "name": "min-su"
+    },
+    {
+      "message": "날래날래",
+      "name": "min-ji"
+    },
+    {
+      "message": "바이",
+      "name": "seung-a"
+    },
+    {
+      "message": "하이루",
+      "name": "dong-sung"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<h1> 구독 목록 </h1>
+<ul>
+  <li *ngFor="let articleId of articleIds">{{articleId}}</li>
+</ul>
+
+<h1> 메세지 목록 (async) </h1>
+<ul>
+  <li *ngFor="let message of messages">{{message.name}} : {{message.message}}</li>
+</ul>

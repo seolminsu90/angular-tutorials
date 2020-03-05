@@ -1,0 +1,8 @@
+<h1> 선택한 Article의 상세 정보 </h1>
+<div *ngIf="article">
+<p>title : {{article.title}}</p>
+<p>contnet : {{article.content}}</p>
+<p>wrtier : {{article.writer}}</p>
+<p>writeAt : {{article.writeAt}}</p>
+<button (click)="subscription()">구독하기</button>
+</div>

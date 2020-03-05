@@ -1,0 +1,18 @@
+<div id="study-article-wrap">
+<h1> {{description}} </h1>
+<div *ngFor="let test of tests">
+  {{test}}
+</div>
+<div *ngIf="bool">
+  <p>Hello~</p>
+</div>
+<div *ngFor="let article of articles; index as idx">
+  <h3 [title]="article.title">
+      {{ article.title }}
+      <a [routerLink]="['/article', article.articleId]">
+      상세보기
+      </a>
+  </h3>
+  <app-alert-component [article]="article" (notify)="getAlertEvent()"></app-alert-component>
+</div>
+</div>
