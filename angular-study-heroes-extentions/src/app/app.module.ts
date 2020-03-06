@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 import { SearchComponent } from './search/search.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SearchComponent } from './search/search.component';
     DetailsComponent,
     MessageComponent,
     DashboardComponent,
-    SearchComponent
+    SearchComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
