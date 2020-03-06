@@ -1,0 +1,19 @@
+h3{
+  border-bottom:1px solid blue;
+}
+button{
+  background: #00aabb;
+  color:#fff;
+  font-weight:bold;
+}
+button:disabled{
+  opacity:0.4;
+}
+
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442; /* red */
+}

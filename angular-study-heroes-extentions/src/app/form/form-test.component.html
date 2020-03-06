@@ -1,0 +1,28 @@
+<h1>반응형 폼 테스트</h1>
+<h3>기본 폼</h3>
+<input [formControl]="name">
+<p>{{name.value}}</p>
+<button (click)="updateForm()">이벤트로 값 변화</button>
+<h3>그룹 폼</h3>
+<form [formGroup]="bUser" (ngSubmit)="onSubmit()">
+  <label>Name: </label><input formControlName="id"><br>
+  <label>Age: </label><input formControlName="age">
+  <button type="submit" [disabled]="!bUser.valid">Submit</button>
+  <div formArrayName="arr">
+    <h3>arr</h3> <button (click)="addArr()">Add arr</button>
+    <div *ngFor="let alias of getterArr.controls; let i=index">
+      <label>
+        Alias:
+        <input type="text" [formControlName]="i">
+      </label>
+    </div>
+  </div>
+</form>
+<p>
+  Form Value: {{ bUser.value | json }}
+</p>
+
+<p>
+  Form Status: {{ bUser.status }}
+</p>
+<button (click)="updateOne()">그룹 중, 일부 폼만 업데이트</button>
