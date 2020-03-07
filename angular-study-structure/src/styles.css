@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+/* 공통 css insert */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html, body {
+  font-size:14px;
+}
+button {
+  margin:5px;
+  border-radius: 3px;
+  padding:5px;
+  border:none;
+  background:#335499;
+  color:#fff;
+  height:30px;
+}
