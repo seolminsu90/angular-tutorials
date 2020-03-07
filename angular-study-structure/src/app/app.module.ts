@@ -9,13 +9,15 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { AdminModule } from './modules/admin/admin.module';
 import { MainComponent } from './shared/components/main/main.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './shared/components/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    MainComponent
+    MainComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
